@@ -32,14 +32,17 @@ def run():
     # for value in my_dict.values():
     #     print(value, end='')
     # print("\n")
-    print()
+    #print()
 
 
     #Creo un diccionario cuyos VALUES sean: "_" (guiones bajos)...
     # ...cuya longitud o numero de KEYS sean las del diccionario random 
     mi_dict_vacio = {i: "_" for i in range(1, len(my_dict)+1)}  #USE UN COMPREHENSION PARA GENERAR UNA LISTA VACIA
 
-    #Imprimo el diccionario vacío, que en realudad está llenado con "_"
+    #Imprimo el diccionario vacío, que en realidad está lleno con "_"
+    for filas in range(17):
+        print()
+
     for value in mi_dict_vacio.values():
         print(value, end='')
     print("\n")
@@ -69,6 +72,7 @@ def run():
                 #Control de letra repetida
                 if cont_r >= 1:
                     cont_r = 0
+                    ejecutar(c2)
                     print("Ouch! Letra Repetida")
                     
                     ##Imprimir diccionario vacío con cada letra válida
@@ -91,12 +95,17 @@ def run():
                     pass
             #Control de letra incorrecta
             if a>0 and a<=2:
-                print("Ok!")
-            else:
-                print("Bad!")
-                c2 = c2 +1
-                print("el contafor es : ", c2)
                 ejecutar(c2)
+                print("Ok!")
+                
+            else:
+                if c2<10:
+                    c2 = c2 +1
+                    print("el contafor es : ", c2)
+                    ejecutar(c2)#BORRAR SYSTEM CLEAR
+                    print("Bad! ")
+                else:
+                    contador = len(my_dict)
                                     
                 
 

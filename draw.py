@@ -1229,39 +1229,18 @@ def draw_10():
     print()
 
     # FILA 16
-    for f15 in range(1):
+    for f16 in range(1):
         print("||", end="")
-    for f15 in range(14):
+    for f16 in range(14):
         print(" ", end="")
-    for f15 in range(2):
+    for f16 in range(2):
         print("\\", end="")
-    for f15 in range(13):
+    for f16 in range(13):
         print(" ", end="")
-    for f15 in range(1):
+    for f16 in range(1):
         print("||", end="")
     print()
 
-#if __name__ == "__name__":
-# draw_1()
-# time.sleep(1)
-# draw_2()
-# time.sleep(1)
-# draw_3()
-# time.sleep(1)
-# draw_4()
-# time.sleep(1)
-# draw_5()
-# time.sleep(1)
-# draw_6()
-# time.sleep(1)
-# draw_7()
-# time.sleep(1)
-# draw_8()
-# time.sleep(1)
-# draw_9()
-# time.sleep(1)
-# draw_10()
-# time.sleep(1)
 
 def ejecutar(entrada):
     if entrada == 1:
@@ -1284,7 +1263,7 @@ def ejecutar(entrada):
         draw_9()
     elif entrada ==10:
         draw_10()
-
+draw_total()
 #print(ejecutar(5))
 
 #my_dict = { '1': 'arbol', '2': 'casa', '3': 'perro'}
