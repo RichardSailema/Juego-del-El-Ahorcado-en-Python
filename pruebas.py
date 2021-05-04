@@ -50,12 +50,14 @@ def run():
         
         #Creo un bucle que genera los ciclos hasta hallar la palabra correcta ...
         #... hasta que el contador sea igual a la longitud de la palabra aleatoria.
+        c2 = 0
         while contador != len(my_dict):
             
                        
             # Pido letra a jugador y creo un control para detectar palabras repetidas
             r = 0      
             cont_r = 0
+            
             while r !=1:
                 #Pido letra
                 letra = input("Ingresa una letra: ")
@@ -64,11 +66,12 @@ def run():
                     if repe == letra:               
                         cont_r = cont_r + 1
                     
+                #Control de letra repetida
                 if cont_r >= 1:
                     cont_r = 0
                     print("Ouch! Letra Repetida")
                     
-                    #Imprimir diccionario vacío con cada letra válida
+                    ##Imprimir diccionario vacío con cada letra válida
                     for value in mi_dict_vacio.values():
                         print(value, end='')
                     print("\n")
@@ -78,6 +81,7 @@ def run():
             
             # Ingreso de letras válidas al diccionario vacio
             a = 0
+            
             for key, value in my_dict.items():                
                 if value == letra:
                     mi_dict_vacio[key] = value
@@ -85,11 +89,14 @@ def run():
                     contador += 1   #Para terminar acaba con todo el bucle                   
                 else:
                     pass
-
+            #Control de letra incorrecta
             if a>0 and a<=2:
                 print("Ok!")
             else:
                 print("Bad!")
+                c2 = c2 +1
+                print("el contafor es : ", c2)
+                ejecutar(c2)
                                     
                 
 

@@ -1263,5 +1263,29 @@ def draw_10():
 # draw_10()
 # time.sleep(1)
 
+def ejecutar(entrada):
+    if entrada == 1:
+        draw_1()
+    elif entrada ==2:
+        draw_2()
+    elif entrada ==3:
+        draw_3()
+    elif entrada ==4:
+        draw_4()
+    elif entrada ==5:
+        draw_5()
+    elif entrada ==6:
+        draw_6()
+    elif entrada ==7:
+        draw_7()
+    elif entrada ==8:
+        draw_8()
+    elif entrada ==9:
+        draw_9()
+    elif entrada ==10:
+        draw_10()
 
+#print(ejecutar(5))
 
+#my_dict = { '1': 'arbol', '2': 'casa', '3': 'perro'}
+#print(my_dict.get('1'))
