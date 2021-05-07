@@ -93,31 +93,38 @@ def run():
                     contador += 1   #Para terminar acaba con todo el bucle                   
                 else:
                     pass
+            
             #Control de letra incorrecta
             if a>0 and a<=2:
                 ejecutar(c2)
                 print("Ok!")
                 
             else:
+                c2 = c2 +1
                 if c2<10:
-                    c2 = c2 +1
                     print("el contafor es : ", c2)
                     ejecutar(c2)#BORRAR SYSTEM CLEAR
                     print("Bad! ")
                 else:
                     contador = len(my_dict)
+                    ejecutar(c2)#BORRAR SYSTEM CLEAR
+                    hanged_tittle()
                                     
                 
-
             #Imprimir diccionario vacío con cada letra válida
             for value in mi_dict_vacio.values():
                 print(value, end='')
             print("\n")
             
+        if c2>=10:
+            print("Oh no!")
+            time.sleep(3)
+            break  
 
-        print("Lo lograste!")
-        time.sleep(1)
-        break   
+        else:
+            print("Lo lograste!")
+            time.sleep(1)
+            break   
         
         
         
